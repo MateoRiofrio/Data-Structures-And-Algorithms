@@ -83,6 +83,29 @@ class LinkedList:
         # update length after deletion accordingly.
         self.length -= 1
 
+    def peek(self):
+        """View the top element on the list."""
+        if(self.is_empty == True):
+            return None
+            
+        return self.top_sentinel.next.data
+
+    def pop(self):
+        """Remove and then return the top element on the list."""
+        if(self.length == 0):
+            return None
+
+        top_node = self.top_sentinel.next
+        self.top_sentinel.next = top_node.next
+        self.length -= 1
+
+        return top.data
+
+    
+    
+
+    
+
     
     
     
