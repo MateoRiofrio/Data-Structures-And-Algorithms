@@ -54,7 +54,21 @@ class LinkedList:
     # add has same functionality as add_first.
     add = add_first
     
+    def add_last(self, data):
+        """Add a node to the bottom of the linked list."""
+        prev_node = self.top_sentinel
+        top = self.top_sentinel.next
+
+        # loop to the end of the list and add new node.
+        while top is not None:
+            prev_node = top
+            top = top.next
+        
+        prev_node.next = Node(data)
+        self.length += 1
+
     
+
     
 
     
