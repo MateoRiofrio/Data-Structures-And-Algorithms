@@ -67,10 +67,23 @@ class LinkedList:
         prev_node.next = Node(data)
         self.length += 1
 
-    
+    def remove(self, target):
+        """Remove the first instance of a node from the list."""
+        prev_node = self.top_sentinel
+        top = self.top_sentinel.next
+        
+        #loop through the list until the target is hit.
+        while top is not None:
+            if(top.data == target):
+                prev_node.next = top.next
+                break
+            prev_node = top
+            top = top.next
+
+        # update length after deletion accordingly.
+        self.length -= 1
 
     
-
     
     
     
