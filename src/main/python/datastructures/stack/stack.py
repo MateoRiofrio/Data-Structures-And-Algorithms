@@ -20,4 +20,12 @@ class Stack:
         """Remove the top element from the linked list representing the stack."""
         return self.lst.pop()        
     
-    
+    def reverse_array(self, arr):
+        """Reversing an array using the stack."""
+        
+        # push items into stack.
+        for i in arr:
+            self.push(i)
+
+        # return reveresed items array. 
+        return [self.pop() for _ in arr]
