@@ -30,5 +30,13 @@ class LinkedList:
         
     def __str__(self):
         return str(list(self))
-
+    
+    def is_empty(self):
+        """Return true if the list is empty, false otherwise."""
+        return self.length == 0
+        
+    def size(self):
+        """Return the size of the linked list."""
+        return self.length
+    
     
