@@ -39,4 +39,24 @@ class LinkedList:
         """Return the size of the linked list."""
         return self.length
     
+    def add_first(self, data):
+        """Add a node to the top of the linked list."""
+        if self.is_empty() == True:
+            # if the list is empty then have the top sentinel point to the given node.
+            self.top_sentinel.next = Node(data)
+        else:
+            # if the list is not empty, create a new node and have it point to the old top node.
+            new_node = Node(data, self.top_sentinel.next)
+            self.top_sentinel.next = new_node
+    
+        self.length += 1
+        
+    # add has same functionality as add_first.
+    add = add_first
+    
+    
+    
+
+    
+    
     
