@@ -11,7 +11,7 @@ class TestLinkedList(unittest.TestCase):
         self.rand_elem = random.randrange(self.MAX_RAND_NUM)
         
     def test_size(self):
-        # test empty linked list size method.
+        # test empty linked list size method
         self.assertEqual(self.lst.size(), 0)
 
         for i in range(self.TEST_SZ):
@@ -24,16 +24,16 @@ class TestLinkedList(unittest.TestCase):
         self.assertFalse(self.lst.is_empty())
 
     def test_contains(self):
-        # check false for empty list, true once element is added.
+        # check false for empty list, true once element is added
         self.assertFalse(self.lst.contains(self.rand_elem))
         self.lst.add(self.rand_elem)
         self.assertTrue(self.lst.contains(self.rand_elem))
 
     def test_peek(self):
-        # assert None on empty list.
+        # assert None on empty list
         self.assertIsNone(self.lst.peek())
 
-        # assert correct item after adding multiple items.
+        # assert correct item after adding multiple items
         rand_list = random.sample(range(self.MAX_RAND_NUM), self.TEST_SZ)
         last_item_added = rand_list[len(rand_list) - 1]
         for elem in rand_list:
@@ -41,12 +41,12 @@ class TestLinkedList(unittest.TestCase):
         self.assertEqual(self.lst.peek(), last_item_added)
 
     def test_add(self):
-        # add on empty list:
+        # add on empty list
         self.lst.add(self.rand_elem)
         self.assertEqual(self.lst.peek(), self.rand_elem)
         self.assertEqual(self.lst.size(), 1)
 
-        # add many items on non-empty list:
+        # add many items on non-empty list
         rand_list = random.sample(range(self.MAX_RAND_NUM), self.TEST_SZ)
         last_item_added = rand_list[len(rand_list) - 1]
         for elem in rand_list:
@@ -55,11 +55,11 @@ class TestLinkedList(unittest.TestCase):
         self.assertEqual(self.lst.size(), self.TEST_SZ + 1)
 
     def test_add_last(self):
-        # add on empty list.
+        # add on empty list
         self.lst.add_last(self.rand_elem)
         self.assertEqual(self.lst.peek(), self.rand_elem)
 
-        # add many items non-empty list:
+        # add many items non-empty list
         rand_list = random.sample(range(self.MAX_RAND_NUM), self.TEST_SZ)
         for elem in rand_list:
             self.lst.add_last(elem)

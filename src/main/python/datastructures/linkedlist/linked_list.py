@@ -51,7 +51,7 @@ class LinkedList:
     
         self.length += 1
         
-    # add has same functionality as add_first.
+    # add has same functionality as add_first
     add = add_first
     
     def add_last(self, data):
@@ -59,7 +59,7 @@ class LinkedList:
         prev_node = self.top_sentinel
         top = self.top_sentinel.next
 
-        # loop to the end of the list and add new node.
+        # loop to the end of the list and add new node
         while top is not None:
             prev_node = top
             top = top.next
@@ -72,7 +72,7 @@ class LinkedList:
         prev_node = self.top_sentinel
         top = self.top_sentinel.next
         
-        #loop through the list until the target is hit.
+        #loop through the list until the target is hit
         while top is not None:
             if(top.data == target):
                 prev_node.next = top.next
@@ -80,7 +80,7 @@ class LinkedList:
             prev_node = top
             top = top.next
 
-        # update length after deletion accordingly.
+        # update length after deletion accordingly
         self.length -= 1
 
     def peek(self):
@@ -99,19 +99,19 @@ class LinkedList:
         self.top_sentinel.next = top_node.next
         self.length -= 1
 
-        return top.data
+        return top_node.data
 
     def contains(self, target):
         """Return true if the list contains the element passed."""
         if (target == None or self.is_empty() == True):
             return False
 
-        # check if top item is target node.
+        # check if top item is target node
         top = self.top_sentinel.next
         if(top.data == target):
             return True
         
-        # else traverse through the list until found. 
+        # else traverse through the list until found
         while top.next is not None:
             if(top.data == target):
                 return True
