@@ -85,14 +85,14 @@ class LinkedList:
 
     def peek(self):
         """View the top element on the list."""
-        if(self.is_empty == True):
+        if(self.is_empty() == True):
             return None
             
         return self.top_sentinel.next.data
 
     def pop(self):
         """Remove and then return the top element on the list."""
-        if(self.length == 0):
+        if(self.is_empty() == True):
             return None
 
         top_node = self.top_sentinel.next
@@ -101,6 +101,23 @@ class LinkedList:
 
         return top.data
 
+    def contains(self, target):
+        """Return true if the list contains the element passed."""
+        if (target == None or self.is_empty() == True):
+            return False
+
+        # check if top item is target node.
+        top = self.top_sentinel.next
+        if(top.data == target):
+            return True
+        
+        # else traverse through the list until found. 
+        while top.next is not None:
+            if(top.data == target):
+                return True
+            top = top.next
+    
+        return False
     
     
 
