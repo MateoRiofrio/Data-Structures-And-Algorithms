@@ -1,5 +1,5 @@
 class Node:
-    "Doubly Linked List Node that holds data, next node, and previous, node."
+    "Doubly Linked List Node that holds data, previous node, and next node."
     def __init__(self, data = None, prev = None, next_= None):
         self.data = data
         self.next = next_
