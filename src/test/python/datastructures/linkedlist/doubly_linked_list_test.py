@@ -18,7 +18,7 @@ class TestLinkedList(unittest.TestCase):
         # random size 
         for i in range(self.TEST_SZ):
             self.lst.add(i)
-        self.assertEqual(self.lst.size(), self.TEST_SZ)
+        self.assertEqual(self.lst.size(), self.TEST_SZ + 1)
     
     def test_is_empty(self):
         self.assertTrue(self.lst.is_empty())
@@ -43,7 +43,9 @@ class TestLinkedList(unittest.TestCase):
 
         # test random size array
         rand_list = random.sample(range(self.MAX_RAND_NUM), self.TEST_SZ)
-        first_elem = rand_list[0]
+        first_elem = rand_list[self.TEST_SZ - 1]
+        for elem in rand_list:
+            self.lst.add(elem)
         self.assertEqual(self.lst.pop(), first_elem)
     
     def test_poll(self):
@@ -53,9 +55,10 @@ class TestLinkedList(unittest.TestCase):
         self.assertEqual(self.lst.poll(), 5)
 
         rand_list = random.sample(range(self.MAX_RAND_NUM), self.TEST_SZ)
-        last_elem = rand_list[self.TEST_SZ - 1]
-        self.assertEqual(self.lst.pop(), last_elem)
-        
-        
+        last_elem = rand_list[0]
+        for elem in rand_list:
+            self.lst.add(elem)
+        self.assertEqual(self.lst.poll(), last_elem)
+                
 if __name__ == '__main__':
     unittest.main()
