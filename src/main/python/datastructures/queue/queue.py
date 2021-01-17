@@ -1,5 +1,7 @@
 from doubly_linked_list import DoublyLinkedList
+
 class Queue:
+    """Queue representation using a Doubly Linked List."""
     def __init__(self):
         self.lst = DoublyLinkedList()
         self.length = 0

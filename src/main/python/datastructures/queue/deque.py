@@ -1,7 +1,7 @@
 from doubly_linked_list import DoublyLinkedList
 
 class Deque:
-    """Dqueue representation using a Doubly Linked List."""
+    """Deque representation using a Doubly Linked List."""
     def __init__(self):
         self.lst = DoublyLinkedList()
         self.length = 0

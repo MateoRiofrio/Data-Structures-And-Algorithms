@@ -29,30 +29,26 @@ class TestQueue(unittest.TestCase):
         self.assertEqual(self.queue.size(), self.TEST_SZ + 1)
     
     def test_dequeue(self):
-        # test empty list
         self.assertIsNone(self.queue.dequeue())
         
-        # smallest non empty list
         self.queue.enqueue(2)
         self.assertEqual(self.queue.dequeue(), 2)
 
-        # insert 50 random elements and test dequeue correctness
-        rand_list = random.sample(range(self.MAX_RAND_NUM), self.TEST_SZ)
-        target_elem = rand_list[0]
-        for elem in rand_list:
+        # insert 50 elements and test dequeue correctness
+        for elem in range(self.TEST_SZ):
             self.queue.enqueue(elem)
-        self.assertEqual(self.queue.dequeue(), target_elem)
+
+        self.assertEqual(self.queue.dequeue(), 0)
 
     def test_enqueue(self):
         self.queue.enqueue(4)
         self.assertEqual(self.queue.size(), 1)
         self.assertEqual(self.queue.dequeue(), 4)  
 
-        # insert 50 random elements and test pop correctness
-        rand_list = random.sample(range(self.MAX_RAND_NUM), self.TEST_SZ)
-        for elem in rand_list:
+        for elem in range(self.TEST_SZ):
             self.queue.enqueue(elem)
-        self.assertEqual(self.queue.size(), self.TEST_SZ) 
+
+        self.assertEqual(self.queue.size(), self.TEST_SZ)
 
 if __name__ == '__main__':
     unittest.main()
