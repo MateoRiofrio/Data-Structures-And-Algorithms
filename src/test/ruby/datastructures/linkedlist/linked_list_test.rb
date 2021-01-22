@@ -77,6 +77,7 @@ class TestLinkedList < Test::Unit::TestCase
         }
         @list.push(1)
         assert_equal(1, @list.pop)
+        assert_equal(0, @list.size)
     end
 
     def test_pop_multiple_items
