@@ -4,8 +4,8 @@ In Computer Science, students are taught fundamental data structures and algorit
 
 ## Data Structures
 
-* Linked List
-  * Singly Linked List  [[Python]](src/main/python/datastructures/linkedlist/linked_list.py) [C]
+* Sentinel Linked List
+  * Singly Linked List  [[Python]](src/main/python/datastructures/linkedlist/linked_list.py) [[Ruby]](src/main/ruby/datastructures/linkedlist/linked_list.rb) [C]
   * Doubly Linked List [[Python]](src/main/python/datastructures/linkedlist/doubly_linked_list.py) [C]
   * Circular Linked List
 * Heap
