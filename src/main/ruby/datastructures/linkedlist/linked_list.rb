@@ -45,10 +45,12 @@ class LinkedList
         elsif size == 1
             top_node = @top_sentinel.next
             @top_sentinel.next = nil
+            @length -= 1
             return top_node.data
         else
             top_node = @top_sentinel.next
             @top_sentinel.next = top_node.next
+            @length -= 1
             return top_node.data
         end
     end 
