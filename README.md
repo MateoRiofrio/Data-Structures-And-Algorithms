@@ -1,34 +1,36 @@
 # Data Structures & Algorithms
 
-In Computer Science, students are taught fundamental data structures and algorithms that they should understand and implement to be good programmers. Therefore, the main goal of this repository is for me to practice implemeting them. Below you will find links to the ones I implemented in Python and C. Unit tests will be under src/test for each data structure and algorithm. Feedback is welcomed!
+In this repository you will find my attempt at implementing some of the fundamental data structures and algorithms. I use Python, C, and Ruby. Unit tests will be under src/test.
 
 ## Data Structures
 
 * Sentinel Linked List
-  * Singly Linked List  [[Python]](src/main/python/datastructures/linkedlist/linked_list.py) [[Ruby]](src/main/ruby/datastructures/linkedlist/linked_list.rb) [C]
-  * Doubly Linked List [[Python]](src/main/python/datastructures/linkedlist/doubly_linked_list.py) [C]
-  * Circular Linked List
+  * Singly Linked List [[C]]()[ [Ruby]](src/main/datastructures/linkedlist/linked_list.rb)
+  * Doubly Linked List [[C]](src/main/datastructures/linkedlist/doubly_linked_list.c)
 * Heap
-  * Min Heap [[Python]](src/main/python/datastructures/heaps/min_heap.py) [C]
-  * Max Heap [[Python]](src/main/python/datastructures/heaps/max_heap.py) [C]
-* Stack [[Python]](src/main/python/datastructures/stack/stack.py) [C]
+  * Min Heap [[Python]](src/main/datastructures/heaps/min_heap.py)
+  * Max Heap [[Python]](src/main/datastructures/heaps/max_heap.py)
 * Queue
-  * Queue [[Python]](src/main/python/datastructures/queue/queue.py) [C]
-  * Deque [[Python]](src/main/python/datastructures/queue/deque.py) [C]
-  * PriorityQueue [[Python]](src/main/python/datastructures/queue/priority_queue.py) [C]
-* Binary Search Tree 
-* Graph [[Python]](src/main/python/datastructures/graphs/graph.py) [C]
+  * Queue [[Python]](src/main/datastructures/queue/queue.py)
+  * Deque [[Python]](src/main/datastructures/queue/deque.py)
+  * PriorityQueue [[Python]](src/main/datastructures/queue/priority_queue.py)
+* Tree
+  * Binary Search Tree 
+* Stack [[Python]](src/main/datastructures/stack/stack.py)
+* Graph [[Python]]()
 
 ## Algorithms 
 
 * Search
-  * Binary Search [[Python]](src/main/python/algorithms/search/binary_search.py) [C]
-  * BFS [[Python]](src/main/python/algorithms/search/breadth_first_search.py) [C]
-  * DFS [[Python]](src/main/python/algorithms/search/depth_first_search.py) [C]
+  * Binary Search [[Python]](src/main/algorithms/search/binary_search.py)
+  * BFS
+  * DFS 
 * Sort
-  * Merge Sort [[Python]](src/main/python/algorithms/sort/mergesort.py) [C]
-  * Quick Sort [[Python]](src/main/python/algorithms/sort/quicksort.py) [C]
-  
+  * Merge Sort
+  * Quick Sort 
+
+## Tests
+* Go to [src/test](src/test)
 
 ## Sources
 
