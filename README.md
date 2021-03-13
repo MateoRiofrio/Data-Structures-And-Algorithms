@@ -5,8 +5,7 @@ In this repository you will find my attempt at implementing some of the fundamen
 ## Data Structures
 
 * Sentinel Linked List
-  * Singly Linked List [[C]]()[ [Ruby]](src/main/datastructures/linkedlist/linked_list.rb)
-  * Doubly Linked List [[C]](src/main/datastructures/linkedlist/doubly_linked_list.c)
+  * Singly Linked List [ [Ruby]](src/main/datastructures/linkedlist/linked_list.rb)
 * Heap
   * Min Heap [[Python]](src/main/datastructures/heaps/min_heap.py)
   * Max Heap [[Python]](src/main/datastructures/heaps/max_heap.py)
