@@ -1,7 +1,5 @@
 # Data Structures & Algorithms
 
-In this repository you will find my attempt at implementing some of the fundamental data structures and algorithms. I use Python, C, and Ruby. Unit tests will be under src/test.
-
 ## Data Structures
 
 * Sentinel Linked List
